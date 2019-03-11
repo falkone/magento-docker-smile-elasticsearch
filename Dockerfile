@@ -1,4 +1,4 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch:5.2.2
+FROM elasticsearch:5.2.2-alpine
 
 # set security and installs plugins necessary for Smile ElasticSuite
 RUN echo "xpack.security.enabled: false" >> /usr/share/elasticsearch/config/elasticsearch.yml \
